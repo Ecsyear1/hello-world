@@ -12,10 +12,12 @@ string brute_force(string pword) {
   for (int char1=0; char1<ascii; char1++) {
    for (int char2=0; char2<ascii; char2++) {
     for (int char3=0; char3<ascii; char3++) {
-     for (int char4=0; char4<ascii; char4++) //digit to char
+     for (int char4=0; char4<ascii; char4++){
+     for (int char5=0;char5<ascii;char5++)//digit to char
      //concatenation
       string attempt = string()+(char)char1+(char)char2+(char)char3+(char)char4;
       if (attempt==password) return attempt;
+      }
      }
     }
    }
